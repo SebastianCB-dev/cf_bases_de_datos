@@ -50,5 +50,5 @@ CREATE TABLE libros(
   paginas           INTEGER UNSIGNED NOT NULL,
   fecha_publicacion DATE NOT NULL,
   fecha_creacion    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-  FOREIGN KEY (autor_id) references autores(autor_id)
+  FOREIGN KEY (autor_id) references autores(autor_id) ON DELETE CASCADE -- ON DELETE CASCADE = Si se elimina un autor, se eliminan todos los libros que pertenecen a ese autor
 );
