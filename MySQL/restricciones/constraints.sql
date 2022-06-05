@@ -46,8 +46,8 @@ CREATE TABLE libros(
   libro_id          INTEGER UNSIGNED PRIMARY KEY AUTO_INCREMENT,
   autor_id          INTEGER UNSIGNED NOT NULL,
   titulo            VARCHAR(50) NOT NULL,
-  descripcion       VARCHAR(250) NOT NULL,
-  paginas           INTEGER UNSIGNED NOT NULL,
+  descripcion       VARCHAR(250) NOT NULL DEFAULT '',
+  paginas           INTEGER UNSIGNED NOT NULL DEFAULT 0,
   fecha_publicacion DATE NOT NULL,
   fecha_creacion    DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (autor_id) references autores(autor_id) ON DELETE CASCADE -- ON DELETE CASCADE = Si se elimina un autor, se eliminan todos los libros que pertenecen a ese autor
