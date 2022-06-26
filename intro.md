@@ -17,3 +17,7 @@ Las tablas deben tener una llaver primaria, que es una columna que identifica a 
 Son las bases de datos más complejas, porque no se basan en una estructura de datos que se puede representar como una tabla.
 Se basan en una serie de sentencias SQL, pero no se puede acceder a los datos de una tabla a través de una sentencia SQL.
 - Por ejemplo: MongoDB, CouchDB, etc.
+
+```
+The database is a collection of schema, records, and constraints for the tables. On the other hand, a schema contains the structure of tables, attributes, their types, constraints, and how they relate to other tables. The DDL statement is used to generate and modify the schema.
+```

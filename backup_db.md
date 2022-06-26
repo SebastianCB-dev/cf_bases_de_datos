@@ -1,0 +1,1 @@
+En workbench ir a la pestaña administration -> data export -> Seleccionar base de datos -> Export tu Dump Project Folder -> Seleccionar folder y darle en EXPORT
